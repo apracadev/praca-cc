@@ -33,6 +33,105 @@ _(_placeholder para link do Figma ou visualização_)_
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Supabase](https://supabase.com/)
 
+## 📚 Estrutura do Banco de Dados
+
+Este projeto já vem com um banco de dados Supabase configurado e populado com dados fictícios. Você poderá ler e consultar os dados, mas **não será possível alterá-los**, pois as permissões estão limitadas a `SELECT`.
+
+📸 **Visualização do modelo de dados:**  
+![Diagrama do Banco de Dados](./public/images/tables.png)
+
+### 🔸 Tabelas disponíveis
+
+- **users**
+- **communities**
+- **tags**
+- **community_tags**
+
+---
+
+### 🧍‍♂️ `users`
+
+Guarda informações dos criadores de praças.
+
+| Campo            | Tipo        | Descrição                                   |
+|------------------|-------------|---------------------------------------------|
+| `id`             | UUID        | Identificador único (igual ao `auth.uid()`) |
+| `first_name`     | TEXT        | Primeiro nome do usuário                    |
+| `last_name`      | TEXT        | Último nome do usuário                      |
+| `username`       | TEXT        | Nome de usuário único                       |
+| `email`          | TEXT        | Email único                                 |
+| `profile_picture`| TEXT        | URL da foto de perfil                       |
+| `phone_number`   | TEXT        | Número de telefone                          |
+| `bio`            | TEXT        | Biografia curta do usuário                  |
+| `state`          | TEXT        | Estado                                      |
+| `city`           | TEXT        | Cidade                                      |
+| `neighborhood`   | TEXT        | Bairro                                      |
+| `created_at`     | TIMESTAMPTZ | Data de criação                             |
+| `updated_at`     | TIMESTAMPTZ | Data de atualização                         |
+
+📄 CSV: [`users.csv`](./public/databases/users.csv)
+
+---
+
+### 🏡 `communities`
+
+Representa uma praça criada por um usuário.
+
+| Campo          | Tipo        | Descrição                                |
+|----------------|-------------|------------------------------------------|
+| `id`           | UUID        | Identificador único                      |
+| `name`         | TEXT        | Nome da praça                            |
+| `description`  | TEXT        | Descrição da praça                       |
+| `creator_id`   | UUID        | Referência a `users.id`                  |
+| `is_private`   | BOOLEAN     | Indica se a praça é privada              |
+| `state`        | TEXT        | Estado onde a praça está localizada      |
+| `city`         | TEXT        | Cidade onde a praça está localizada      |
+| `neighborhood` | TEXT        | Bairro onde a praça está localizada      |
+| `image_path`   | TEXT        | Caminho da imagem da praça               |
+| `created_at`   | TIMESTAMPTZ | Data de criação                          |
+| `updated_at`   | TIMESTAMPTZ | Última atualização                       |
+
+📄 CSV: [`communities.csv`](./public/databases/communities.csv)
+
+---
+
+### 🏷️ `tags`
+
+Tags representam interesses que podem estar associados às praças.
+
+| Campo         | Tipo | Descrição                          |
+|---------------|------|------------------------------------|
+| `id`          | UUID | Identificador único                |
+| `title`       | TEXT | Nome da tag (ex: Yoga, Leitura)    |
+| `description` | TEXT | Descrição da tag                   |
+| `emoji`       | TEXT | Emoji representando a tag          |
+
+📄 CSV: [`tags.csv`](./public/databases/tags.csv)
+
+---
+
+### 🔗 `community_tags`
+
+Tabela de junção entre `communities` e `tags`.
+
+| Campo          | Tipo | Descrição                                       |
+|----------------|------|-------------------------------------------------|
+| `id`           | UUID | Identificador único                             |
+| `community_id` | UUID | Referência à tabela `communities(id)`           |
+| `tag_id`       | UUID | Referência à tabela `tags(id)`                  |
+
+📄 CSV: [`community_tags.csv`](./public/databases/community_tags.csv)
+
+---
+
+### 🔄 Relacionamentos
+
+- Um usuário (`users`) pode criar várias praças (`communities`)
+- Uma praça pode ter múltiplos interesses (`tags`)
+- Uma tag pode estar associada a várias praças
+- A tabela `community_tags` representa essa associação N:N entre `communities` e `tags`
+
+
 
 ## ✅ O que deve ser feito
 
