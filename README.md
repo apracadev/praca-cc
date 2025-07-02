@@ -38,7 +38,7 @@ _(_placeholder para link do Figma ou visualização_)_
 Este projeto já vem com um banco de dados Supabase configurado e populado com dados fictícios. Você poderá ler e consultar os dados, mas **não será possível alterá-los**, pois as permissões estão limitadas a `SELECT`.
 
 📸 **Visualização do modelo de dados:**  
-![Diagrama do Banco de Dados](./public/images/tables.png)
+![Diagrama do Banco de Dados](./praca-desafio/public/images/tables.png)
 
 ### 🔸 Tabelas disponíveis
 
@@ -47,7 +47,6 @@ Este projeto já vem com um banco de dados Supabase configurado e populado com d
 - **tags**
 - **community_tags**
 
----
 
 ### 🧍‍♂️ `users`
 
@@ -69,9 +68,8 @@ Guarda informações dos criadores de praças.
 | `created_at`     | TIMESTAMPTZ | Data de criação                             |
 | `updated_at`     | TIMESTAMPTZ | Data de atualização                         |
 
-📄 CSV: [`users.csv`](./public/databases/users.csv)
+📄 CSV: [`users.csv`](./praca-desafio/public/databases/users.csv)
 
----
 
 ### 🏡 `communities`
 
@@ -91,9 +89,8 @@ Representa uma praça criada por um usuário.
 | `created_at`   | TIMESTAMPTZ | Data de criação                          |
 | `updated_at`   | TIMESTAMPTZ | Última atualização                       |
 
-📄 CSV: [`communities.csv`](./public/databases/communities.csv)
+📄 CSV: [`communities.csv`](./praca-desafio/public/databases/communities.csv)
 
----
 
 ### 🏷️ `tags`
 
@@ -106,9 +103,8 @@ Tags representam interesses que podem estar associados às praças.
 | `description` | TEXT | Descrição da tag                   |
 | `emoji`       | TEXT | Emoji representando a tag          |
 
-📄 CSV: [`tags.csv`](./public/databases/tags.csv)
+📄 CSV: [`tags.csv`](./praca-desafio/public/databases/tags.csv)
 
----
 
 ### 🔗 `community_tags`
 
@@ -120,9 +116,8 @@ Tabela de junção entre `communities` e `tags`.
 | `community_id` | UUID | Referência à tabela `communities(id)`           |
 | `tag_id`       | UUID | Referência à tabela `tags(id)`                  |
 
-📄 CSV: [`community_tags.csv`](./public/databases/community_tags.csv)
+📄 CSV: [`community_tags.csv`](./praca-desafio/public/databases/community_tags.csv)
 
----
 
 ### 🔄 Relacionamentos
 
