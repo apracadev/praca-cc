@@ -149,28 +149,29 @@ Esses caminhos são utilizados nas colunas `profile_picture` e `image_path` das 
 
 As praças possuem **interesses (tags)** associados. Essa relação é usada para implementar os filtros por interesse na tela de explorar.
 
-| Comunidade                         | Tags                           |
-|------------------------------------|--------------------------------|
-| Jardinagem BH                      | Natureza, Hobbies              |
-| Clube de Leitura do Savassi        | Literatura, Hobbies            |
-| Altinha no Parque das Mangabeiras  | Esporte, Natureza              |
-| Yoga na Praça da Liberdade         | Bem-estar, Esporte             |
-| Ciclistas BH                       | Esporte, Mobilidade Urbana     |
-| Cervejeiros de BH                  | Gastronomia, Hobbies           |
-| Música na Praça Sete               | Música, Cultura                |
-| Feira Vegana BH                    | Gastronomia, Natureza          |
-| Startup Café                       | Tecnologia, Empreendedorismo   |
-| Cinema ao Ar Livre                 | Cultura, Hobbies               |
-| Skate na Savassi                   | Esporte, Juventude             |
-| Corrida da Pampulha                | Esporte, Bem-estar             |
-| Capoeira na Praça Raul Soares      | Cultura, Esporte               |
-| TechTalks BH                       | Tecnologia, Educação           |
-| Dança de Rua Centro                | Cultura, Juventude             |
-| Pet Lovers BH                      | Animais, Natureza              |
-| Feira de Orgânicos                 | Natureza, Gastronomia          |
-| RPG no Parque Municipal            | Games, Hobbies                 |
-| Sarau de Poesia                    | Literatura, Cultura            |
-| Fotógrafos Urbanos                 | Fotografia, Juventude          |
+
+| Comunidade                       | Tags                                                                 |
+|----------------------------------|----------------------------------------------------------------------|
+| Mestres do Código                | Tecnologia, Ciências                                                 |
+| Amantes da Música                | Ar livre, Ir com a galera, Música                                    |
+| Moda Sustentável                 | Moda, Causas Sociais                                                 |
+| Cervejeiros Artesanais           | Restaurantes, Gastronomia, Ir com a galera, Relaxando                |
+| Comunidade de Cinema de Rua      | Ar livre, Cinema, Teatro, Relaxando                                  |
+| Fotografia Urbana BH             | Ar livre, Artes, Turismo                                             |
+| Clube dos Games                  | Jogos                                                                |
+| Futebol de Várzea Gameleira      | Futebol, Ar livre, Esportes, Para os moleques, Para as divas         |
+| Feiras Locais de BH              | Ar livre, Gastronomia                                                |
+| Boardgames & Amigos              | Jogos                                                                |
+| Apaixonados pelo Ciclismo Urbano | Esportes, Ar livre                                                   |
+| Clube de Leitura Savassi         | Para as Divas, Artes, Relaxando                                      |
+| Yoga ao Ar livre                 | Ar livre, Yoga, Relaxando                                            |
+| Grupo Café & Conversa            | Restaurantes, Gastronomia, Ir com a galera                           |
+| Chefs Caseiros BH                | Culinária, Gastronomia                                               |
+| Jardilovers                      | Ar livre, Relaxando, Causas Sociais                                  |
+| Pais de Pet Santo Agostinho      | Ar livre, Ir com a galera                                            |
+| Turismo em BH                    | Turismo, Causas Sociais, Artes                                       |
+| Amantes de Bicicletada Kids      | Esportes, Ar livre                                                   |
+| Arte & Pintura BH                | Artes                                                                |
 
 
 ## ✅ O que deve ser feito
