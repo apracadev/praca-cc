@@ -8,6 +8,11 @@ Nosso objetivo é entender como você estrutura e implementa uma nova funcionali
 
 ## 🎯 O Desafio: Tela de Explorar
 
+A praça é a rede social que permite gestores de comunidade viverem de seus sonhos construindo suas praças e aos usuários de encontrarem as experiências perfeitas para viverem mais a vida real. Encontrar uma praça para fazer parte significa participar de eventos, sair com os amigos, ter a possibilidade de conhecer novas experiências e criar memórias.
+Olhando o futuro do mercado de trabalho e a evolução das tecnologias teremos menos rotinas operacionais e uma redução na carga de trabalho, então nossa solução visa trazer mais significado para a vida das pessoas com atividades que elas amam.
+Dessa forma explorar novas experiências é uma das etapas dessa jornada pelas praças. Por que não a turma que joga o futebol toda semana de quarta-feira não se interessaria por jogar altinha no parque aos sábados?
+O início da tela de explorar é segmentar por categorias (tabela tags), quando filtrar pela categoria de "futebol" ver tanto a praça do fut society de quarta quanto a altinha no parque de sábado. Assim, iniciaremos com nomes e categorias para uma base de praças.
+
 Você irá desenvolver uma nova página chamada `/explorar`, acessível a partir da página inicial do site.
 
 Essa tela permitirá aos usuários:
@@ -126,6 +131,46 @@ Tabela de junção entre `communities` e `tags`.
 - Uma tag pode estar associada a várias praças
 - A tabela `community_tags` representa essa associação N:N entre `communities` e `tags`
 
+
+### 🖼️ Buckets de Imagens
+
+As imagens usadas neste projeto estão armazenadas em buckets públicos no Supabase:
+
+- **Fotos de perfil de usuários:**  
+  `profile-pictures/<user_id>`
+
+- **Imagens das praças (communities):**  
+  `praca-pictures/<creator_id>`
+
+Esses caminhos são utilizados nas colunas `profile_picture` e `image_path` das respectivas tabelas.
+
+
+### 🧷 Tags atribuídas às Praças
+
+As praças possuem **interesses (tags)** associados. Essa relação é usada para implementar os filtros por interesse na tela de explorar.
+
+| Comunidade                         | Tags                           |
+|------------------------------------|--------------------------------|
+| Jardinagem BH                      | Natureza, Hobbies              |
+| Clube de Leitura do Savassi        | Literatura, Hobbies            |
+| Altinha no Parque das Mangabeiras  | Esporte, Natureza              |
+| Yoga na Praça da Liberdade         | Bem-estar, Esporte             |
+| Ciclistas BH                       | Esporte, Mobilidade Urbana     |
+| Cervejeiros de BH                  | Gastronomia, Hobbies           |
+| Música na Praça Sete               | Música, Cultura                |
+| Feira Vegana BH                    | Gastronomia, Natureza          |
+| Startup Café                       | Tecnologia, Empreendedorismo   |
+| Cinema ao Ar Livre                 | Cultura, Hobbies               |
+| Skate na Savassi                   | Esporte, Juventude             |
+| Corrida da Pampulha                | Esporte, Bem-estar             |
+| Capoeira na Praça Raul Soares      | Cultura, Esporte               |
+| TechTalks BH                       | Tecnologia, Educação           |
+| Dança de Rua Centro                | Cultura, Juventude             |
+| Pet Lovers BH                      | Animais, Natureza              |
+| Feira de Orgânicos                 | Natureza, Gastronomia          |
+| RPG no Parque Municipal            | Games, Hobbies                 |
+| Sarau de Poesia                    | Literatura, Cultura            |
+| Fotógrafos Urbanos                 | Fotografia, Juventude          |
 
 
 ## ✅ O que deve ser feito
