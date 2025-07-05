@@ -26,8 +26,9 @@ Além disso, você receberá:
 - Um **client do Supabase** já conectado a um projeto com as tabelas necessárias e RLS configurado
 - **Telas criadas pela nossa designer**, com o UI e UX que esperamos para a funcionalidade
 
-📸 **As telas de UI/UX estarão disponíveis neste link:**  
-_(_placeholder para link do Figma ou visualização_)_
+📸 **As telas de UI/UX estarão disponíveis abaixo:**  
+[Telas do Figma aqui!](https://www.figma.com/design/0mN7sMWXzsze0dREsCYpBp/Processo-seletivo?node-id=0-1&p=f&t=zevr6xQe00yfjZHT-0)
+[Link para vídeo do flow de telas](https://youtube.com/shorts/MEdLrpC5co0?feature=share)
 
 
 ## 🛠️ Stack utilizada

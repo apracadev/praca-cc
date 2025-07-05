@@ -1,11 +1,12 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
-      <header className="bg-[#009440] text-white py-4 px-4 sm:py-6 sm:px-6">
+      <header className="bg-[#246B3F] text-white py-4 px-4 sm:py-6 sm:px-6">
         <div className="flex items-center justify-center gap-3">
           <Image src="/images/logo.png" alt="Logo Praça" width={40} height={40} className="w-13 h-13 sm:w-15 sm:h-15" />
           <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-center">
@@ -14,7 +15,7 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Main content */}
+      {/* Conteúdo principal */}
       <main className="flex-1 bg-white flex flex-col items-center justify-center p-4 sm:p-6 gap-6">
         <div className="text-center text-gray-700 text-base sm:text-lg lg:text-xl max-w-lg space-y-4">
           <p>
@@ -24,15 +25,17 @@ export default function Home() {
             Boa sorte e dê o seu melhor! 💚
           </p>
         </div>
-        <button 
-          className="bg-[#009440] text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-semibold text-base sm:text-lg lg:text-xl hover:bg-[#007a33] active:scale-99 transform transition-all duration-50 ease-in-out shadow-lg hover:shadow-xl"
-        >
-          Vamos explorar as Praças juntos?
-        </button>
+        <Link href="/explorar">
+          <button 
+            className="bg-[#246B3F] text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-semibold text-base sm:text-lg lg:text-xl hover:bg-[#007a33] active:scale-99 transform transition-all duration-50 ease-in-out shadow-lg hover:shadow-xl"
+          >
+            Vamos explorar as Praças juntos?
+          </button>
+        </Link>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-[#009440] text-white text-center py-6 px-4 sm:py-8 sm:px-8 mt-auto text-sm sm:text-base border-t border-[#007a33] space-y-3 sm:space-y-4">
+      {/* Rodapé */}
+      <footer className="bg-[#246B3F] text-white text-center py-6 px-4 sm:py-8 sm:px-8 mt-auto text-sm sm:text-base border-t border-[#007a33] space-y-3 sm:space-y-4">
         <div>
           Para esse teste vamos focar na implementação para telas mobile. No entanto, responsividade não deve ser deixada de lado.
         </div>
