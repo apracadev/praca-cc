@@ -28,6 +28,7 @@ Além disso, você receberá:
 
 📸 **As telas de UI/UX estarão disponíveis abaixo:**  
 [Telas do Figma aqui!](https://www.figma.com/design/0mN7sMWXzsze0dREsCYpBp/Processo-seletivo?node-id=0-1&p=f&t=zevr6xQe00yfjZHT-0)
+
 [Link para vídeo do flow de telas](https://youtube.com/shorts/MEdLrpC5co0?feature=share)
 
 
@@ -79,7 +80,7 @@ Guarda informações dos criadores de praças.
 
 ### 🏡 `communities`
 
-Representa uma praça criada por um usuário.
+Guarda informações de praças criadas por um usuário.
 
 | Campo          | Tipo        | Descrição                                |
 |----------------|-------------|------------------------------------------|
@@ -100,7 +101,7 @@ Representa uma praça criada por um usuário.
 
 ### 🏷️ `tags`
 
-Tags representam interesses que podem estar associados às praças.
+Guarda as informações das tags. Tags representam interesses que podem estar associados às praças.
 
 | Campo         | Tipo | Descrição                          |
 |---------------|------|------------------------------------|
@@ -114,7 +115,7 @@ Tags representam interesses que podem estar associados às praças.
 
 ### 🔗 `community_tags`
 
-Tabela de junção entre `communities` e `tags`.
+Tabela de junção entre `communities` e `tags`. Essa tabela contém as relações entre uma praça e seus interesses.
 
 | Campo          | Tipo | Descrição                                       |
 |----------------|------|-------------------------------------------------|
@@ -137,7 +138,7 @@ Tabela de junção entre `communities` e `tags`.
 
 As imagens usadas neste projeto estão armazenadas em buckets públicos no Supabase:
 
-- **Fotos de perfil de usuários:**  
+- **Fotos de perfil de usuários (users):**  
   `profile-pictures/<user_id>`
 
 - **Imagens das praças (communities):**  
@@ -199,6 +200,7 @@ Cada praça deve ser exibida utilizando o componente `PracaCard`, que você deve
 - Foto do criador da praça
 - Localização da praça (cidade ou bairro, conforme definido na UI)
 
+Mais informações no Figma.
 
 #### 2. Buscar praças pelo nome
 Utilize a search bar já incluída no código base e implemente a funcionalidade de busca.
@@ -213,7 +215,7 @@ Alguns componentes mencionados no UI design não estão implementados no código
 
 Exemplos de componentes a serem criados:
 - `PracaCard`
-- Modal de filtros (para selecionar interesses)
+- Modal de filtros para selecionar interesses (Parcialmente implementado)
 - Outros que sejam identificados durante a implementação
 
 
@@ -262,7 +264,7 @@ Sinta-se à vontade para implementá-la — e conte pra gente na sua resposta à
 
 ## 🧪 Critérios de Avaliação
 
-Não buscamos apenas funcionalidades que "funcionam", mas também **como** elas são construídas.
+Não buscamos apenas funcionalidades que "funcionam", mas também vamos analizar **como** elas são construídas.
 
 Os critérios de avaliação incluem:
 
